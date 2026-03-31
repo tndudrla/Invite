@@ -2,90 +2,232 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Power Daily AI 채널 초대</title>
+<meta property="og:title" content="Power Daily AI 채널 초대">
+<meta property="og:description" content="전력시장 SMP 일일 브리핑 텔레그램 채널">
+<meta property="og:type" content="website">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    background-color: #f0f2f5;
+    font-family: -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .header {
+    background: linear-gradient(135deg, #0088cc 0%, #005f8f 100%);
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .header-sub {
+    font-size: 11px;
+    color: rgba(255,255,255,0.75);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .header-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+  }
+
+  .header-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.65);
+    margin-top: 6px;
+  }
+
+  .body-section {
+    padding: 28px 24px;
+  }
+
+  .intro {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.75;
+    margin-bottom: 24px;
+  }
+
+  .intro strong {
+    color: #0088cc;
+  }
+
+  .qr-box {
+    background: #f8f9fb;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .qr-label {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+  }
+
+  .qr-box img {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+  }
+
+  .qr-hint {
+    font-size: 11px;
+    color: #bbb;
+    margin-top: 10px;
+  }
+
+  .cta-wrap {
+    text-align: center;
+    padding: 4px 0 24px;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: #0088cc;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 16px 0;
+    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+    transition: background 0.2s;
+  }
+
+  .cta-btn:active {
+    background: #006fa3;
+  }
+
+  .info-section {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+  }
+
+  .info-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .info-item {
+    font-size: 14px;
+    color: #555;
+    line-height: 2;
+  }
+
+  .footer {
+    background: #f8f9fb;
+    padding: 18px 24px;
+    text-align: center;
+    border-top: 1px solid #eee;
+  }
+
+  .footer-text {
+    font-size: 11px;
+    color: #aaa;
+    line-height: 1.6;
+  }
+
+  /* 모바일 세로 (작은 화면) */
+  @media (max-width: 380px) {
+    body { padding: 8px; }
+    .header { padding: 24px 20px; }
+    .header-title { font-size: 22px; }
+    .body-section { padding: 24px 20px; }
+    .qr-box img { width: 150px; height: 150px; }
+    .cta-btn { font-size: 15px; padding: 14px 0; }
+  }
+
+  /* 데스크톱 */
+  @media (min-width: 600px) {
+    body { padding: 40px 20px; }
+    .header { padding: 40px 40px; }
+    .header-title { font-size: 30px; }
+    .body-section { padding: 36px 40px; }
+    .qr-box img { width: 200px; height: 200px; }
+    .footer { padding: 20px 40px; }
+  }
+</style>
 </head>
-<body style="margin:0;padding:0;background-color:#f0f2f5;font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;">
+<body>
 
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f0f2f5;padding:40px 20px;">
-<tr><td align="center">
-
-<!-- Main Card -->
-<table role="presentation" width="520" cellpadding="0" cellspacing="0" style="background-color:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+<div class="card">
 
   <!-- Header -->
-  <tr>
-    <td style="background:linear-gradient(135deg,#0088cc 0%,#005f8f 100%);padding:36px 40px;text-align:center;">
-      <div style="font-size:14px;color:rgba(255,255,255,0.85);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">Telegram Channel Invitation</div>
-      <div style="font-size:28px;font-weight:700;color:#ffffff;letter-spacing:-0.5px;">Power Daily AI</div>
-      <div style="font-size:14px;color:rgba(255,255,255,0.7);margin-top:8px;">SMP Daily Brief &amp; 전력시장 인사이트</div>
-    </td>
-  </tr>
+  <div class="header">
+    <div class="header-sub">Telegram Channel Invitation</div>
+    <div class="header-title">Power Daily AI</div>
+    <div class="header-desc">SMP Daily Brief &amp; 전력시장 인사이트</div>
+  </div>
 
   <!-- Body -->
-  <tr>
-    <td style="padding:36px 40px;">
-      <p style="font-size:15px;color:#333;line-height:1.7;margin:0 0 20px 0;">
-        안녕하세요,<br><br>
-        <strong>Power Daily AI</strong> 텔레그램 채널에 초대합니다.<br>
-        매일 전력시장 SMP 현황, 전력수요, 발전 상황 등 핵심 데이터를 자동으로 브리핑해 드립니다.
-      </p>
+  <div class="body-section">
+    <p class="intro">
+      안녕하세요,<br><br>
+      <strong>Power Daily AI</strong> 텔레그램 채널에 초대합니다.<br>
+      매일 전력시장 SMP 현황, 전력수요, 발전 상황 등 핵심 데이터를 자동으로 브리핑해 드립니다.
+    </p>
 
-      <!-- QR Code Section -->
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:24px 0;">
-        <tr>
-          <td align="center" style="background-color:#f8f9fb;border-radius:12px;padding:28px;">
-            <div style="font-size:13px;color:#888;margin-bottom:14px;letter-spacing:0.5px;">아래 QR코드를 스캔하여 참여하세요</div>
-            <img src="data:image/png;base64,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" 
-                 alt="Power Daily AI QR Code" 
-                 width="200" height="200" 
-                 style="display:block;border-radius:8px;" />
-            <div style="font-size:11px;color:#aaa;margin-top:12px;">또는 아래 버튼을 클릭하세요</div>
-          </td>
-        </tr>
-      </table>
+    <!-- QR Code -->
+    <div class="qr-box">
+      <div class="qr-label">QR코드를 스캔하여 참여하세요</div>
+      <img src="data:image/png;base64,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" 
+           alt="Power Daily AI QR Code" />
+      <div class="qr-hint">또는 아래 버튼을 클릭하세요</div>
+    </div>
 
-      <!-- CTA Button -->
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-        <tr>
-          <td align="center" style="padding:8px 0 24px 0;">
-            <a href="https://t.me/+jqPkb_X3RtZhNTZl" 
-               style="display:inline-block;background-color:#0088cc;color:#ffffff;font-size:15px;font-weight:600;text-decoration:none;padding:14px 36px;border-radius:8px;letter-spacing:0.3px;">
-              채널 참여하기 &rarr;
-            </a>
-          </td>
-        </tr>
-      </table>
+    <!-- CTA Button -->
+    <div class="cta-wrap">
+      <a href="https://t.me/+jqPkb_X3RtZhNTZl" class="cta-btn">
+        채널 참여하기 →
+      </a>
+    </div>
 
-      <!-- Info Section -->
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #eee;padding-top:20px;">
-        <tr>
-          <td style="font-size:13px;color:#666;line-height:1.8;">
-            <strong style="color:#333;">제공 정보</strong><br>
-            &#x26A1; SMP(계통한계가격) 일일 현황<br>
-            &#x1F4CA; 전력수요 · 석탄공급 · 원전공급 추이<br>
-            &#x1F525; LNG 발전기 가격 결정 비중<br>
-            &#x1F50B; 기저발전 기동/정지 현황
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
+    <!-- Info -->
+    <div class="info-section">
+      <div class="info-title">제공 정보</div>
+      <div class="info-item">
+        ⚡ SMP(계통한계가격) 일일 현황<br>
+        📊 전력수요 · 석탄공급 · 원전공급 추이<br>
+        🔥 LNG 발전기 가격 결정 비중<br>
+        🔋 기저발전 기동/정지 현황
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
-  <tr>
-    <td style="background-color:#f8f9fb;padding:20px 40px;text-align:center;border-top:1px solid #eee;">
-      <div style="font-size:12px;color:#999;line-height:1.6;">
-        Power Daily AI &middot; 전력시장 데이터 자동 브리핑<br>
-        본 메일은 채널 초대 안내 목적으로 발송되었습니다.
-      </div>
-    </td>
-  </tr>
+  <div class="footer">
+    <div class="footer-text">
+      Power Daily AI · 전력시장 데이터 자동 브리핑<br>
+      본 페이지는 채널 초대 안내 목적으로 제작되었습니다.
+    </div>
+  </div>
 
-</table>
-
-</td></tr>
-</table>
+</div>
 
 </body>
 </html>
